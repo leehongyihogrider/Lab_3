@@ -29,6 +29,14 @@ def test_bubble_sort_invalid():
 
     assert (result == [])
 
+def test_bubble_sort_equal_or_more_than_10():
+    result = []
+    input_arr = [1,2,3,4,5,6,7,8,9,10]
+
+    result = Lab3.bubble_sort(input_arr, 1)
+
+    assert (result == 1 )
+
 def test_bubble_sort_not_integer():
     result = []
     input_arr = [6.4, 34, 2.5, 1.2, 22, 11, 90]
