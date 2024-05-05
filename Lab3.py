@@ -5,10 +5,13 @@ SORT_DESCENDING = 1
 
 
 def bubble_sort(arr, sorting_order):
+    
     if not all(isinstance(x, int) for x in arr):
         return 2
+    
     if not arr:
         return 0
+    
     # Copy input list to results list
     arr_result = arr.copy()
 
